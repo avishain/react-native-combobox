@@ -12,12 +12,12 @@
 <br/><br/>
 
 ## Usage
-#### Example - images
+<!-- #### Example - images
 
 <div style="display:flex;flex-direction:row">
   <img src="https://res.cloudinary.com/dexts7jfo/image/upload/v1595960302/image2_eqbpiw.png" style="height:100%;width:100%"/>
   <img src="https://res.cloudinary.com/dexts7jfo/image/upload/v1595960364/image_daoab0.png" style="height:100%;width:100%"/>
-</div>
+</div> -->
 
 #### Example - code
 
@@ -40,8 +40,6 @@ import ComboBox from 'react-native-combobox';
             <ComboBox
                 values={values}
                 onValueSelect={setSelectedValue}
-                rtl={false}
-                fontSize={25}
             />
             <Text>selected value:          {selectedValue}</Text>
         </View>
@@ -50,24 +48,17 @@ import ComboBox from 'react-native-combobox';
 
 <br/>
 
-## API - RangeSlider (default import)
+## API - Combobox (default import)
 | Property | Type | Required | Default |
 | :---     |:----:|  :-----: | :-----: | 
-| min | number | yes | - |
-| max | number | yes | - |
-| fromValueOnChange | callback | yes | - |
-| toValueOnChange | callback | yes | - |
-| step | number | no | 1 |
-| styleSize | string ( 'small' \| 'medium' \| 'large' )  | no | 'medium' |
-| fromKnobColor | string (color) | no | '#00a2ff' |
-| toKnobColor | string (color) | no | '#00a2ff' |
-| inRangeBarColor | string (color) | no | 'rgb(100,100,100)' |
-| outOfRangeBarColor | string (color) | no | 'rgb(200,200,200)' |
-| valueLabelsTextColor | string (color) | no | 'white' |
-| valueLabelsBackgroundColor | string (color) | no | '#3a4766' |
-| rangeLabelsTextColor | string (color) | no | 'rgb(60,60,60)' |
-| showRangeLabels | boolean | no | true |
-| showValueLabels | boolean | no | true |
+| values | array of string | yes | - |
+| onValueSelect | callback | yes | - |
+| fontFamily | string (font) | no | - |
+| textColor | string (color) | no | - |
+| backgroundColor | string (color) | no | - |
+| fontSize | numbrer | no | - |
+| defaultValue | string | no | ' ' |
+| rtl | boolean | no | false |
 
 <br/><br/>
 

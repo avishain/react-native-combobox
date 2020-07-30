@@ -3,6 +3,11 @@
     "name": "react-native-combobox",
     "version": "1.0.0",
     "description": "Customizable combo box for react native apps. Compatible with Expo.",
+    "homepage": "https://github.com/D10S60948/react-native-combobox#readme",
+    "types": "./src/App",
+    "files": [
+        "src"
+    ],
     "scripts": {
         "build": "tsc --emitDeclarationOnly",
         "start": "expo start"
@@ -18,5 +23,10 @@
     "license": "MIT",
     "dependencies": {
         "react-native-elements": "^2.0.4"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.43",
+        "@types/react-native": "^0.63.2",
+        "typescript": "^3.9.7"
     }
 }

@@ -5,8 +5,8 @@ import { Icon } from 'react-native-elements';
 interface ComboBoxProps {
     values: Array<string>,
     onValueSelect: (value: string) => void,
+    textColor?: string,
     fontFamily?: string,
-    color?: string,
     fontSize?: number,
     backgroundColor?: string,
     defaultValue?: string,
@@ -21,10 +21,10 @@ export default ({
     values,
     onValueSelect,
     fontFamily,
-    color,
+    textColor,
     fontSize,
     defaultValue = '',
-    backgroundColor = '',
+    backgroundColor = 'white',
     rtl = false
 }: ComboBoxProps) => {
 
@@ -46,7 +46,7 @@ export default ({
     })
 
     const textFontStyle = fontFamily ? { fontFamily } : {};
-    const textColorStyle = color ? { color } : {};
+    const textColorStyle = textColor ? { color: textColor } : {};
     const textSizeStyle = fontSize ? { fontSize } : {};
     const textStyle = { ...textColorStyle, ...textFontStyle, ...textSizeStyle };
 
