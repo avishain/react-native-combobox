@@ -3,21 +3,20 @@
 ![MIT License](https://img.shields.io/npm/l/react-native-range-slider-expo?color=red)
 ### Customizable combo-box for react native apps <br/><br/>
 
-<!-- [Please let me know if you encounter any issues or if you have any imporvements suggestion, comments, etc..](https://github.com/D10S60948/react-native-range-slider-expo/issues) -->
+[Please let me know if you encounter any issues or if you have any imporvements suggestion, comments, etc..](https://github.com/D10S60948/react-native-combobox/issues)
 
 <br/><br/>
 ## Getting started
-`npm i react-native-range-slider-expo`
+`npm i react-native-combobox`
 
 <br/><br/>
 
 ## Usage
-<!-- #### Example - images
+#### Example 
 
 <div style="display:flex;flex-direction:row">
-  <img src="https://res.cloudinary.com/dexts7jfo/image/upload/v1595960302/image2_eqbpiw.png" style="height:100%;width:100%"/>
-  <img src="https://res.cloudinary.com/dexts7jfo/image/upload/v1595960364/image_daoab0.png" style="height:100%;width:100%"/>
-</div> -->
+  <img src="https://res.cloudinary.com/dexts7jfo/image/upload/v1596087000/ezgif.com-video-to-gif_rnao8h.gif" style="height:100%;width:100%"/>
+</div>
 
 #### Example - code
 
