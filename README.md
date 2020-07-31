@@ -50,8 +50,8 @@ import ComboBox from 'react-native-combobox';
 ## API - Combobox (default import)
 | Property | Type | Required | Default | Description |
 | :---     |:----:|  :-----: | :-----: | :-----: | 
-| values | Array<string> | yes | - | array of string |
-| onValueSelect | function | yes | - | return the selected index |
+| values | Array\<string> | yes | - | array of strings |
+| onValueSelect | function | yes | - | returns the selected index |
 | fontFamily | string (font) | no | - | - |
 | textColor | string (color) | no | - | - |
 | backgroundColor | string (color) | no | - | - |
