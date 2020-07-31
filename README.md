@@ -40,7 +40,7 @@ import ComboBox from 'react-native-combobox';
                 values={values}
                 onValueSelect={setSelectedValue}
             />
-            <Text>selected value:          {selectedValue}</Text>
+            <Text>selected value:          {values[selectedValue]}</Text>
         </View>
     );
 ```
@@ -48,16 +48,16 @@ import ComboBox from 'react-native-combobox';
 <br/>
 
 ## API - Combobox (default import)
-| Property | Type | Required | Default |
-| :---     |:----:|  :-----: | :-----: | 
-| values | array of string | yes | - |
-| onValueSelect | callback | yes | - |
-| fontFamily | string (font) | no | - |
-| textColor | string (color) | no | - |
-| backgroundColor | string (color) | no | - |
-| fontSize | numbrer | no | - |
-| defaultValue | string | no | ' ' |
-| rtl | boolean | no | false |
+| Property | Type | Required | Default | Description |
+| :---     |:----:|  :-----: | :-----: | :-----: | 
+| values | Array<string> | yes | - | array of string |
+| onValueSelect | function | yes | - | return the selected index |
+| fontFamily | string (font) | no | - | - |
+| textColor | string (color) | no | - | - |
+| backgroundColor | string (color) | no | - | - |
+| fontSize | number | no | - | - |
+| defaultValue | string | no | ' ' | - |
+| rtl | boolean | no | false | - |
 
 <br/><br/>
 

@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements';
 
 interface ComboBoxProps {
     values: Array<string>,
-    onValueSelect: (value: string) => void,
+    onValueSelect: (value: number) => void,
     textColor?: string,
     fontFamily?: string,
     fontSize?: number,
@@ -14,7 +14,8 @@ interface ComboBoxProps {
 }
 
 interface OptionProps {
-    text: string
+    text: string,
+    index: number
 }
 
 export default ({
@@ -30,7 +31,7 @@ export default ({
 
     const [selectedSubject, setSelectedSubject] = useState(defaultValue);
     const [isOpen, setIsOpen] = useState(false);
-    const [scaleY] = useState(new Animated.Value(0.001));
+    const [scaleY] = useState(new Animated.Value(0.00));
 
     const toggle = () => {
         Animated.spring(scaleY, {
@@ -50,16 +51,16 @@ export default ({
     const textSizeStyle = fontSize ? { fontSize } : {};
     const textStyle = { ...textColorStyle, ...textFontStyle, ...textSizeStyle };
 
-    const onSelect = (selected: string) => {
-        setSelectedSubject(selected);
+    const onSelect = (selected: number) => {
+        setSelectedSubject(values[selected]);
         onValueSelect(selected);
         toggle();
     }
-    const Option = ({ text }: OptionProps) => {
+    const Option = ({ text, index }: OptionProps) => {
         return (
             <TouchableOpacity
                 style={styles.option}
-                onPress={() => onSelect(text)}
+                onPress={() => onSelect(index)}
             >
                 <Text style={textStyle}>{text}</Text>
             </TouchableOpacity>
@@ -82,7 +83,7 @@ export default ({
             >
                 <View>
                     {
-                        values.map((subject, key) => <Option text={subject} key={key} />)
+                        values.map((subject, key) => <Option text={subject} key={key} index={key} />)
                     }
                 </View>
             </Animated.ScrollView>
